@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>plzchrome</title>
+  </head>
+  <body>
+    <h1>ただのWebサイト</h1>
+    <div id="message"></div>
+    <script>
+      var userAgent = navigator.userAgent;
+
+      if (userAgent.indexOf("Chrome") != 1) {
+        document.getElementById("message").innerHTML =
+          "Chromeでアクセスしてくれてありがとね～";
+      } else {
+        document.getElementById("message").innerHTML =
+          "Chromeでアクセスしてください";
+      }
+    </script>
+  </body>
+</html>
